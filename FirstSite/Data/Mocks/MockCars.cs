@@ -68,6 +68,17 @@ namespace FirstSite.Data.Mocks
                         isFavourite = false,
                         available = true, 
                         Category = _carsCategory.AllCategories.Last()
+                    },
+                    new Car
+                    {
+                        name = "Nissan Leaf", 
+                        shortDesc = "Электромобиль", 
+                        longDesc = "Гавно", 
+                        img = "https://images.app.goo.gl/C88ey24ixALcePrE7", 
+                        price = 500, 
+                        isFavourite = false,
+                        available = true, 
+                        Category = _carsCategory.AllCategories.Last()
                     }
                 };
             }
