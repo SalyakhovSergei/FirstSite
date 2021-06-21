@@ -17,11 +17,13 @@ namespace FirstSite.Controllers
 
         public ViewResult List()
         {
-            ViewBag.Title = "car page";
+            ViewBag.Title = "Page cars";
+
             CarsListViewModel obj = new CarsListViewModel();
             obj.getAllCars = _allCars.Cars;
-           
-            return View();
+            obj.carCategory = "drachki";
+                       
+            return View(obj);
         }
     }
 }
